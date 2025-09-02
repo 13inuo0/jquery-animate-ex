@@ -4,7 +4,6 @@ $(function () {
     $(".box").animate(
       {
         left: "300px",
-        bottom: "200px",
       },
       1000
     );
