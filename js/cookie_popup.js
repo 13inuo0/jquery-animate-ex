@@ -33,8 +33,8 @@ $(function () {
   // if($.cookie())
   let chk = $("#chk");
   //   쿠키 "popup" 의 값이 "none" 이면 팝업을 숨김
-  if ($.cookie("popup") === "none") {
-    $(".notice_wrap").hide();
+  if ($.cookie("popup") !== "none") {
+    $(".notice_wrap").fadeIn();
   }
   $(".closeBtn").click(function () {
     // console.log(chk.is(":checked"));
